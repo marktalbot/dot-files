@@ -7,6 +7,7 @@ export TERM='xterm-256color'
 # Git
 alias gg='git log --oneline --abbrev-commit --all --graph --decorate --color'   # Git Log/Graph
 alias ggl='git log --graph --oneline --decorate'
+alias gs='git status'
 alias g='git'
 
 # Navigation/Filesystem
