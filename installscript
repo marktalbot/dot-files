@@ -21,6 +21,10 @@ ln -s $HOME/.dotfiles/shell/.vimrc $HOME/.vimrc
 rm -rf $HOME/.vim
 ln -s $HOME/.dotfiles/shell/.vim $HOME/.vim
 
+#fix missing font characters (see https://github.com/robbyrussell/oh-my-zsh/issues/1906)
+cd ~/.oh-my-zsh/themes/
+git checkout d6a36b1 agnoster.zsh-theme
+
 echo 'Things to do to make the agnoster terminal theme work:'
 
 #patch font contains right characters for promt
