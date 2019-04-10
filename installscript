@@ -21,23 +21,13 @@ ln -s $HOME/.dotfiles/shell/.vimrc $HOME/.vimrc
 rm -rf $HOME/.vim
 ln -s $HOME/.dotfiles/shell/.vim $HOME/.vim
 
-#fix missing font characters (see https://github.com/robbyrussell/oh-my-zsh/issues/1906)
-cd ~/.oh-my-zsh/themes/
-git checkout d6a36b1 agnoster.zsh-theme
-
 echo 'Things to do to make the agnoster terminal theme work:'
 
 #patch font contains right characters for promt
 echo '1. install menlo patched font included in ~/.dotfiles/misc https://gist.github.com/qrush/1595572/raw/Menlo-Powerline.otf'
 
 #install solarized http://ethanschoonover.com/solarized
-echo '2. install patched solarized theme included in ~/.dotfiles/misc'
-
-echo '++++++++++++++++++++++++++++++'
-echo 'Some optional tidbits'
-
-echo '1. set some sensible os x defaults by running: $HOME/.dotfiles/osx/set-defaults.sh'
-echo '2. make a .dotfiles-custom/shell/.aliases for your personal commands'
+echo '2. install patched solarized theme included in ~/.dotfiles/misc <-- meh, no need to do this really'
 
 echo '++++++++++++++++++++++++++++++'
 echo '++++++++++++++++++++++++++++++'
